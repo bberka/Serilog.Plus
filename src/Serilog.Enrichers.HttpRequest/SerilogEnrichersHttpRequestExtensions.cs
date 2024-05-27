@@ -51,8 +51,8 @@ public static class SerilogEnrichersHttpRequestExtensions
     return enrich.With(new HttpRequestSchemeEnricher(propertyName));
   }
 
-  public static LoggerConfiguration WithHttpRequestTradeIdentifier(this LoggerEnrichmentConfiguration enrich, string propertyName = "TradeIdentifier") {
-    return enrich.With(new HttpRequestSchemeEnricher(propertyName));
+  public static LoggerConfiguration WithHttpRequestTraceIdentifier(this LoggerEnrichmentConfiguration enrich, string propertyName = "TradeIdentifier") {
+    return enrich.With(new HttpRequestTraceIdentifierEnricher(propertyName));
   }
   
   public static LoggerConfiguration WithHttpRequestUserAgent(this LoggerEnrichmentConfiguration enrich, string propertyName = "UserAgent") {
