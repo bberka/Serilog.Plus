@@ -25,6 +25,6 @@ internal sealed class HostIpAddressEnricher : ILogEventEnricher
     var ipAddress = ipHostInfo.AddressList.Select(x => x.ToString())
                               .Where(x => !x.StartsWith("192.168.") && !x.StartsWith("::"))
                               .ToList();
-    return ipAddress.FirstOrDefault();
+    return ipAddress.FirstOrDefault() ?? string.Empty;
   }
 }
