@@ -31,3 +31,25 @@ dotnet add package Serilog.Enrichers.HttpContext
 - WithHttpRequestTradeIdentifier
 - WithHttpRequestUserAgent
 - WithHttpRequestUserIdentityName
+
+# Serilog.Enrichers.System
+Enrich serilog events with system information.
+
+Install the Serilog.Enrichers.System NuGet package
+```
+Install-Package Serilog.Enrichers.System
+```
+OR
+```
+dotnet add package Serilog.Enrichers.System
+```
+## System Enricher Methods
+
+- WithEnvironmentVariable
+- WithHostIpAddress
+- WithMacAddress
+- WithMachineName
+- WithOSVersion
+- WithStackTrace
+- WithThreadId
+- WithTimeZone
