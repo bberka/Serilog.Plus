@@ -2,7 +2,7 @@
 
 namespace Serilog.Enrichers.System;
 
-public static class EnricherExtensions
+public static class SerilogEnrichersSystemExtensions
 {
   public static LoggerConfiguration WithEnvironmentVariable(this LoggerEnrichmentConfiguration enrich, string propertyName, string environmentVariableName) {
     return enrich.With(new EnvironmentVariableEnricher(propertyName, environmentVariableName));
