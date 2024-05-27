@@ -22,10 +22,6 @@ public static class SerilogEnrichersSystemExtensions
     return enrich.With(machineGuidEnricher);
   }
 
-  public static LoggerConfiguration WithMachineGuid(this LoggerEnrichmentConfiguration enrich, string propertyName = "MachineGuid") {
-    return enrich.With(new MachineGuidEnricher(propertyName));
-  }
-
   public static LoggerConfiguration WithMachineName(this LoggerEnrichmentConfiguration enrich, string propertyName = "MachineName") {
     return enrich.With(new MachineNameEnricher(propertyName));
   }
