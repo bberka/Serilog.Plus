@@ -15,7 +15,9 @@ internal sealed class MacAddressEnricher : ILogEventEnricher
     _propertyName = propertyName;
     _getSingle = getSingle;
     _getOnlyActive = getOnlyActive;
-    _macAddress = GetMacAddress();
+    if (string.IsNullOrEmpty(_macAddress)) {
+      _macAddress = GetMacAddress();
+    }
   }
 
   public void Enrich(LogEvent logEvent, ILogEventPropertyFactory propertyFactory) {
