@@ -28,7 +28,7 @@ dotnet add package Serilog.Enrichers.HttpContext
 - WithHttpRequestQueryString
 - WithHttpRequestRole
 - WithHttpRequestScheme
-- WithHttpRequestTradeIdentifier
+- WithHttpRequestTraceIdentifier
 - WithHttpRequestUserAgent
 - WithHttpRequestUserIdentityName
 
