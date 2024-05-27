@@ -5,7 +5,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <OutputType>Library</OutputType>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <Title>Serilog.Enrichers.HttpRequest</Title>
     <Authors>bberka</Authors>
     <Description>Enrich serilog events with HttpRequest information.</Description>
