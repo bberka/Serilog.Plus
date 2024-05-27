@@ -8,11 +8,11 @@ Enrich serilog events with HttpRequest information.
 
 Install the Serilog.Enrichers.HttpRequest NuGet package
 ```
-Install-Package Serilog.Enrichers.HttpContext
+Install-Package Serilog.Enrichers.HttpRequest
 ```
 OR
 ```
-dotnet add package Serilog.Enrichers.HttpContext
+dotnet add package Serilog.Enrichers.HttpRequest
 ```
 
 ## HttpRequest Enricher Methods
