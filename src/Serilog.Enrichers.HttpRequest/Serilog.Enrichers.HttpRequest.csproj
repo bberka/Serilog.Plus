@@ -11,9 +11,10 @@
     <Description>Enrich serilog events with HttpRequest information.</Description>
     <PackageProjectUrl>https://github.com/bberka/Serilog.Plus</PackageProjectUrl>
     <RepositoryUrl>https://github.com/bberka/Serilog.Plus</RepositoryUrl>
-<!--     <PackageReadmeFile>README.md</PackageReadmeFile> -->
-<!--     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile> -->
-<!--     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance> -->
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <IsPackable>true</IsPackable>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
@@ -24,4 +25,16 @@
     <PackageReference Include="Serilog" Version="3.1.1"/>
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+  
+  
 </Project>
